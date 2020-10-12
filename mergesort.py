@@ -1,9 +1,9 @@
 __author__ = 'TARUNCH'
 import random
 import time
-
-
-def msort(a):
+#header files
+# added some comments for better understanding of program and participating in hacktoberfest
+def msort(a):#define a function
     if len(a) > 1:
         mid = len(a)/2
         b = a[:mid]
@@ -16,7 +16,7 @@ def msort(a):
         j = 0
         k = 0
         while i < len(b) and j < len(c):
-            if b[i] < c[j]:
+            if b[i] < c[j]:#comparing the number in a and b array
                 a[k] = b[i]
                 i = i + 1
             else:
